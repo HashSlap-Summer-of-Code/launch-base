@@ -6,4 +6,4 @@
 2. Make sure `styles.css` is in the same folder.
 3. You'll see a centered heading, paragraph, and button.
 
-Enjoy your first open-source HTML+CSS contribution!
+
