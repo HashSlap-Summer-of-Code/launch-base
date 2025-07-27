@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fffdf3;
+  color: #33303a;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.back-arrow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 150px;
+  text-align: center;
+
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  background-color: #6a6691;
+  padding: 0.5rem 0.75rem;
+  font-size: 1.1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.back-arrow:hover {
+  color: #fff;
+  background-color: #605d7c;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  color: #4a5799; /* Softer tone for main text */
+}
+
+h1 span {
+  font-weight: 800;
+  color: #394587; 
+}
+
+.chat-bubble {
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  line-height: 1.5;
+  max-width: 80%;
+  word-wrap: break-word;
+  border: 1px solid #ddd6c2;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.chat-bubble.user {
+  background-color: #ffe6e6;
+  align-self: flex-end;
+}
+
+.chat-bubble.ai {
+  background-color: #f3e6ff;
+  align-self: flex-start;
+}
+
+.chat-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.chat-form input {
+  flex-grow: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd6c2;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fffaf0;
+  color: #33303a;
+}
+
+.chat-form button {
+  padding: 0.75rem 1.25rem;
+  background-color: #394587;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.chat-form button:hover {
+  background-color: #5b68ae;
+}
+
+.clear-form {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.clear-button {
+  background-color: #394587;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.clear-button:hover {
+  background-color: #5b68ae;
+}

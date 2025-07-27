@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Talk to Mixtral</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='chat.css') }}" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <a href="/" class="back-arrow" title="Go to homepage">← Home</a>
+    <h1>Talk to <span>Mixtral</span></h1>
+
+    {% if conversation %}
+        {% for msg in conversation %}
+        <div class="chat-bubble {{ 'user' if msg.sender == 'user' else 'ai' }}">
+            <strong>{{ 'You' if msg.sender == 'user' else 'AI' }}:</strong> {{ msg.message }}
+        </div>
+        {% endfor %}
+    {% endif %}
+
+    <form method="POST" class="chat-form">
+        <input type="text" name="user_input" placeholder="Ask something..." autocomplete="off" />
+        <button type="submit" name="action" value="send">Send</button>
+        <button type="submit" name="action" value="clear" class="clear-button">Clear</button>
+    </form>
+    
+</body>
+</html>
