@@ -1,0 +1,28 @@
+{
+  "name": "ci-cd-template",
+  "version": "1.0.0",
+  "description": "CI/CD Ready Node.js API Template",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "mocha test/**/*.js --exit",
+    "lint": "eslint .",
+    "format": "eslint --fix ."
+  },
+  "keywords": ["nodejs", "express", "ci-cd", "github-actions", "template"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.10",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.1.0",
+    "supertest": "^6.3.3"
+  }
+}
